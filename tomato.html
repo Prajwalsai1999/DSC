@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function add(){
+var a= parseInt(prompt("enter a number"));
+var flag=true;
+for(i=2; i<=(a/2);i++)
+{
+	if(a%i==0)
+	{
+		flag=false;
+		break;
+	}
+}
+if (flag==false)
+	document.write("its not a prime number");
+else
+	document.write("its a prime number");
+
+
+</script>
+<button onclick="add()">enter a number</button>
+
+</body>
+</html>
