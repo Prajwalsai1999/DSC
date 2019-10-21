@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prime no</title>
+	<script type="text/javascript">
+		var p = parseInt(prompt("Enter a no to find if it is prime number or not"));
+		var flag = true;
+		for (var i = 2; i <= p/2; i++) {
+			if (p % i == 0) {
+				flag=false;
+				break;
+			}
+		}
+		if (p < 2 || flag == false) {
+			document.write(p+" is not a prime number");
+		}
+		else{
+			document.write(p+" is a prime number");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
